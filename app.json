@@ -9,7 +9,6 @@
     "productivity",
     "dashboard",
     "admin",
-    "postgres",
     "mysql",
     "cms",
     "headless-cms",
@@ -35,7 +34,7 @@
     },
     "DB_CLIENT": {
       "description": "Database server type.",
-      "value": "pg"
+      "value": "mysql"
     },
     "RATE_LIMITER_ENABLED": {
       "description": "Whether the rate limiter should be enabled or not.",
@@ -173,9 +172,9 @@
     },
     {
       "as": "DATABASE",
-      "plan": "heroku-postgresql:hobby-dev",
+      "plan": "jawsdb-maria:kitefin",
       "options": {
-        "version": "12"
+        "version": "10"
       }
     },
     {
